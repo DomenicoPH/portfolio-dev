@@ -1,4 +1,3 @@
-import Image from "next/image";
 import LandingView from "@/views/LandingView";
 
 export default function Home() {
