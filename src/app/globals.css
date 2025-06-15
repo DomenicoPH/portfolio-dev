@@ -24,3 +24,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/*FONTS*/
+.montserrat{
+  font-family: var(--montserrat), sans-serif;
+}
+.quicksand{
+  font-family: var(--quicksand), sans-serif;
+}
+.zilla{
+  font-family: var(--zilla), serif;
+}
