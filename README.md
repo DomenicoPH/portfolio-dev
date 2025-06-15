@@ -44,3 +44,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## dependencias
     npm i --save-dev prettier
+
+## deploy
+    https://portfolio-dev-mu-eight.vercel.app/
