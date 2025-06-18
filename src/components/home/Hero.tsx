@@ -1,24 +1,43 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image"
 import gsap from "@/utils/gsapSetup";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero(){
 
     //GSAP
-    const heroRef = useRef<HTMLAnchorElement>(null);
+    const heroRef = useRef<HTMLDivElement>(null);
     useEffect(() => {
       if (heroRef.current) {
-        gsap.from(
-          heroRef.current,
+        gsap.from(heroRef.current,
           {
             opacity:0,
-            x: -1000,
-            duration: 2
+            y: 1000,
+            duration: 1
           }
-        )
+        );
+
+        gsap.fromTo(
+          heroRef.current,
+          { opacity: 1, y: 10 },
+          {
+            opacity: 0,
+            y: 0,
+            duration: 1.5,
+            scrollTrigger: {
+              trigger: heroRef.current,
+              start: "top center",
+              end: "bottom center",
+              scrub: true,
+            },
+          }
+        );
       }
     }, []);
     //GSAP
+
     return(
         <div className="bg-gray-900">
             <div ref={heroRef} className="flex flex-col gap-5 md:flex-row justify-center items-center h-screen">
