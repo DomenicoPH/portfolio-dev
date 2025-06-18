@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Header(){
     return(
-        <div className="flex justify-between px-20 py-4 bg-gray-800/25 montserrat">
+        <div className="flex justify-between px-20 py-4 bg-black/20 w-screen montserrat fixed">
             <Link className="hover:text-fuchsia-500" href="/"><h2>GnomonoDEV</h2></Link>
             <nav>
                 <ul className="flex gap-2">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Quicksand, Zilla_Slab } from "next/font/google";
+import { Montserrat, Quicksand, Zilla_Slab, Roboto } from "next/font/google";
 import "./globals.css";
 
 import Header from "@/components/layout/Header";
@@ -18,6 +18,10 @@ const zilla = Zilla_Slab({
   subsets: ["latin"],
   weight: ['300','400','500','600','700'],
 })
+const roboto = Roboto({
+  variable: "--roboto",
+  subsets: ["latin"]
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${zilla.variable} ${quicksand.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${zilla.variable} ${quicksand.variable} ${roboto.variable}`}>
       <body className="antialiased montserrat">
         <Header />
         {children}

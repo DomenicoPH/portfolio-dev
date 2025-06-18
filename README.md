@@ -44,6 +44,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## dependencias
     npm i --save-dev prettier
+    npm install gsap
+    npm i @studio-freight/lenis
 
 ## deploy
     https://portfolio-dev-mu-eight.vercel.app/

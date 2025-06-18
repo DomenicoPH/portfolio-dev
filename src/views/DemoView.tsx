@@ -44,6 +44,19 @@ export default function DemoView(){
                     <p className="zilla text-[152px] pl-5 text-sky-400">ABC</p>
                 </div>
             </div>
+
+            <div className="flex items-center">
+                <div className="flex flex-col">
+                    <div className="text-green-400">
+                        <h2 className="roboto text-start text-2xl">Roboto</h2>
+                        <p className="roboto max-w-100 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id esse doloribus, minima itaque debitis non pariatur magni sed maiores earum nisi laborum inventore illum, provident eaque asperiores iste iure a?</p>
+                    </div>
+                    <span className="w-100 h-4 bg-green-400 mb-4"></span>
+                </div>
+                <div>
+                    <p className="roboto text-[152px] pl-5 text-green-400">ABC</p>
+                </div>
+            </div>
             
         </div>
     )
