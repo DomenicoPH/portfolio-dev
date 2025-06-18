@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Quicksand, Zilla_Slab, Roboto } from "next/font/google";
+import LenisProvider from "@/components/LenisProvider/LenisProvider";
 import "./globals.css";
 
 import Header from "@/components/layout/Header";
@@ -36,8 +37,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${montserrat.variable} ${zilla.variable} ${quicksand.variable} ${roboto.variable}`}>
       <body className="antialiased montserrat">
+        <LenisProvider />
         <Header />
-        {children}
+          {children}
         <Footer />
       </body>
     </html>
