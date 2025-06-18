@@ -1,30 +1,16 @@
-"use client"; // Asegura que se ejecute solo en el cliente
+"use client";
 import { useEffect, useRef } from "react";
-import gsap from "@/utils/gsapSetup"; // Usa el archivo de configuración global
+import gsap from "@/utils/gsapSetup";
 import AboutView from "@/views/AboutView";
-import LandingView from "@/views/LandingView";
+import Hero from "@/components/home/Hero";
 
 export default function Home() {
-  const landingRef = useRef<HTMLDivElement>(null);
+
+  //GSAP
   const aboutRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (landingRef.current && aboutRef.current) {
-      gsap.fromTo(
-        landingRef.current,
-        { opacity: 0, y: -50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1.5,
-          scrollTrigger: {
-            trigger: landingRef.current,
-            start: "top center",
-            end: "bottom center",
-            scrub: true,
-          },
-        }
-      );
+    if (aboutRef.current) {
 
       gsap.fromTo(
         aboutRef.current,
@@ -42,13 +28,12 @@ export default function Home() {
         }
       );
     }
-  }, []);
+  }, []);  
+  //GSAP
 
   return (
     <>
-      <div ref={landingRef}>
-        <LandingView />
-      </div>
+      <Hero />
       <div ref={aboutRef}>
         <AboutView />
       </div>
