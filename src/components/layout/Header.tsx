@@ -12,7 +12,7 @@ export default function Header() {
   const headerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    // Animación de entrada para el logo
+    // logo anim. Entrada
     if (logoRef.current) {
       gsap.fromTo(
         logoRef.current,
@@ -21,7 +21,7 @@ export default function Header() {
       )
     }
 
-    // Animación de entrada para la navegación
+    // nav anim. Entrada
     if (navRef.current) {
       gsap.fromTo(
         navRef.current,
@@ -59,7 +59,7 @@ export default function Header() {
   return (
     <div
       ref={headerRef}
-      className="flex justify-between px-20 py-4 bg-transparent w-screen montserrat fixed z-20 top-0 left-0"
+      className="flex justify-between px-5 lg:px-20 py-4 bg-transparent w-screen montserrat fixed z-20 top-0 left-0"
     >
       <Link ref={logoRef} className="hover:text-fuchsia-500" href="/">
         <h2>GnomonoDEV</h2>
