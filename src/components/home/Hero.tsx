@@ -21,7 +21,7 @@ export default function Hero(){
 
         gsap.fromTo(
           heroRef.current,
-          { opacity: 1, y: 10 },
+          { opacity: 1, y: 50 },
           {
             opacity: 0,
             y: 0,
