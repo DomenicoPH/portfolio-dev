@@ -17,7 +17,8 @@ export default function Hero(){
           {
             opacity:0,
             y: 1000,
-            duration: 1
+            duration: 4,
+            ease: "elastic.out"
           }
         );
 
@@ -44,6 +45,7 @@ export default function Hero(){
           logoRef.current,
           {
             x: 1000,
+            ease: "power2.out",
             rotate: 300,
             scrollTrigger: {
               trigger: heroRef.current,
@@ -58,6 +60,7 @@ export default function Hero(){
           textRef.current,
           {
             x: -1000,
+            ease: "power2.out",
             scrollTrigger: {
               trigger: heroRef.current,
               start: "bottom bottom",

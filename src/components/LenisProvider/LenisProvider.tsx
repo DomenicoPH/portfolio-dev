@@ -8,7 +8,7 @@ export default function LenisProvider() {
     const lenis = new Lenis({
       duration: 1,
       easing: t => t === 1 ? 1 : 1 - Math.pow(2, -10 * t),
-      wheelMultiplier: 4.0,
+      wheelMultiplier: 5,
     })
 
     function raf(time: number) {
