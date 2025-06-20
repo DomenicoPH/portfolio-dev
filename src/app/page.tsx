@@ -24,6 +24,7 @@ export default function Home() {
             start: "top center",
             end: "bottom center",
             scrub: true,
+            markers: false,
           },
         }
       );
@@ -32,11 +33,11 @@ export default function Home() {
   //GSAP
 
   return (
-    <>
+    <div className="overflow-hidden">
       <Hero />
       <div ref={aboutRef}>
         <AboutView />
       </div>
-    </>
+    </div>
   );
 }

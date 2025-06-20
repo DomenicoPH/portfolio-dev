@@ -16,9 +16,9 @@ export default function Hero(){
         gsap.from(heroRef.current,
           {
             opacity:0,
-            y: 1000,
-            duration: 4,
-            ease: "elastic.out"
+            y: -1000,
+            duration: 3,
+            ease: "bounce.out"
           }
         );
 
