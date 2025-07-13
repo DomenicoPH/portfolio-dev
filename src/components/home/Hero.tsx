@@ -75,7 +75,7 @@ export default function Hero(){
     //GSAP
 
     return(
-        <div className="bg-gray-900 bg-gradient-to-t from-black to-gray-900">
+        <div className="bg-gray-900 bg-gradient-to-b from-gray-900 to-black">
             <div ref={heroRef} className="flex flex-col gap-5 md:flex-row justify-center items-center h-screen">
                 <Image
                     ref={logoRef}
