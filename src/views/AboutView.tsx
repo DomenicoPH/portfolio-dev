@@ -1,3 +1,5 @@
+'use client'
+
 import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaSass } from "react-icons/fa6";
 import { SiTypescript, SiJavascript, SiExpress, SiPostgresql } from "react-icons/si";
 
@@ -83,7 +85,7 @@ export default function AboutView() {
   //GSAP
 
   return (
-    
+
     <div ref={aboutRef} className="flex flex-col justify-center gap-10 h-screen mx-auto bg-gradient-to-b from-black to-gray-900">
 
       <div className="flex flex-col xl:flex-row justify-center items-center gap-10 xl:gap-25">
